@@ -1,0 +1,295 @@
+<script> //type="text/javascript">
+    let userInputVar = "";
+    let userInputAll = "";
+    let line = 1;
+    function getInput(){
+        document.getElementById("8lineCap").innerHTML = "";
+        switch (line){
+            case 1:
+        userInputVar = document.getElementById("userInput").value;
+        userInputAll = (userInputAll + " " + userInputVar + " ");
+        console.log(userInputAll);
+        updateMainText("maintext1");
+            break
+            
+            case 2:
+        userInputVar = document.getElementById("userInput").value;
+        userInputAll = (userInputAll + " " + userInputVar + " ");
+        console.log(userInputAll);
+        updateMainText("maintext2");
+            break
+
+            case 3:
+        userInputVar = document.getElementById("userInput").value;
+        userInputAll = (userInputAll + " " + userInputVar + " ");
+        console.log(userInputAll);
+        updateMainText("maintext3");
+            break
+
+            case 4:
+        userInputVar = document.getElementById("userInput").value;
+        userInputAll = (userInputAll + " " + userInputVar + " ");
+        console.log(userInputAll);
+        updateMainText("maintext4");
+            break
+
+            case 5:
+        userInputVar = document.getElementById("userInput").value;
+        userInputAll = (userInputAll + " " + userInputVar + " ");
+        console.log(userInputAll);
+        updateMainText("maintext5");
+            break
+
+            case 6:
+        userInputVar = document.getElementById("userInput").value;
+        userInputAll = (userInputAll + " " + userInputVar + " ");
+        console.log(userInputAll);
+        updateMainText("maintext6");
+            break
+
+            case 7:
+        userInputVar = document.getElementById("userInput").value;
+        userInputAll = (userInputAll + " " + userInputVar + " ");
+        console.log(userInputAll);
+        updateMainText("maintext7");
+            break
+
+            case 8:
+        userInputVar = document.getElementById("userInput").value;
+        userInputAll = (userInputAll + " " + userInputVar + " ");
+        console.log(userInputAll);
+        updateMainText("maintext8");
+            break
+
+             }   }
+        // userInputVar = document.getElementById("userInput").value;
+        // userInputAll = (userInputAll + " " + userInputVar + " ");
+        // console.log(userInputAll);
+        // updateMainText();
+
+    function removeInput(){
+        document.getElementById("8lineCap").innerHTML = "";
+        switch (line){
+            case 1:
+        userInputVar = document.getElementById("userInput").value;
+        userInputAll = userInputAll.replace((" " + userInputVar), "");
+        console.log(userInputAll);
+        updateMainText("maintext1");
+            break
+
+            case 2:
+        userInputVar = document.getElementById("userInput").value;
+        userInputAll = userInputAll.replace((" " + userInputVar), "");
+        console.log(userInputAll);
+        updateMainText("maintext2");
+            break
+
+            case 3:
+        userInputVar = document.getElementById("userInput").value;
+        userInputAll = userInputAll.replace((" " + userInputVar), "");
+        console.log(userInputAll);
+        updateMainText("maintext3");
+            break
+
+            case 4:
+        userInputVar = document.getElementById("userInput").value;
+        userInputAll = userInputAll.replace((" " + userInputVar), "");
+        console.log(userInputAll);
+        updateMainText("maintext4");
+            break
+
+            case 5:
+        userInputVar = document.getElementById("userInput").value;
+        userInputAll = userInputAll.replace((" " + userInputVar), "");
+        console.log(userInputAll);
+        updateMainText("maintext5");
+            break
+
+            case 6:
+        userInputVar = document.getElementById("userInput").value;
+        userInputAll = userInputAll.replace((" " + userInputVar), "");
+        console.log(userInputAll);
+        updateMainText("maintext6");
+            break
+
+            case 7:
+        userInputVar = document.getElementById("userInput").value;
+        userInputAll = userInputAll.replace((" " + userInputVar), "");
+        console.log(userInputAll);
+        updateMainText("maintext7");
+            break
+
+            case 8:
+        userInputVar = document.getElementById("userInput").value;
+        userInputAll = userInputAll.replace((" " + userInputVar), "");
+        console.log(userInputAll);
+        updateMainText("maintext8");
+            break
+
+             }   }
+    function updateMainText(){
+        document.getElementById("8lineCap").innerHTML = "";
+        switch (line){
+            case 1:
+                document.getElementById("mainText1").innerHTML = userInputAll;
+                    break
+            
+            case 2:
+                document.getElementById("mainText2").innerHTML = userInputAll;
+                    break
+
+            case 3:
+                document.getElementById("mainText3").innerHTML = userInputAll;
+                    break
+
+            case 4:
+                document.getElementById("mainText4").innerHTML = userInputAll;
+                    break
+            
+            case 5:
+                document.getElementById("mainText5").innerHTML = userInputAll;
+                    break
+
+            case 6:
+                document.getElementById("mainText6").innerHTML = userInputAll;
+                    break
+
+            case 7:
+                document.getElementById("mainText7").innerHTML = userInputAll;
+                    break
+
+            case 8:
+                document.getElementById("mainText8").innerHTML = userInputAll;
+                    break
+            } }
+function clearLine(){
+        document.getElementById("8lineCap").innerHTML = "";
+        switch (line){
+            case 1:
+                document.getElementById("mainText1").innerHTML = "";
+                    break
+            
+            case 2:
+                document.getElementById("mainText2").innerHTML = "";
+                    break
+
+            case 3:
+                document.getElementById("mainText3").innerHTML = "";
+                    break
+
+            case 4:
+                document.getElementById("mainText4").innerHTML = "";
+                    break
+            
+            case 5:
+                document.getElementById("mainText5").innerHTML = "";
+                    break
+
+            case 6:
+                document.getElementById("mainText6").innerHTML = "";
+                    break
+
+            case 7:
+                document.getElementById("mainText7").innerHTML = "";
+                    break
+
+            case 8:
+                document.getElementById("mainText8").innerHTML = "";
+                    break
+            } }
+    function clearAllInput(){
+        document.getElementById("8lineCap").innerHTML = "";
+        line = 1;
+        userInputAll = "--";
+        document.getElementById("mainText1").innerHTML = userInputAll;
+        document.getElementById("mainText2").innerHTML = userInputAll;
+        document.getElementById("mainText3").innerHTML = userInputAll;
+        document.getElementById("mainText4").innerHTML = userInputAll;
+        document.getElementById("mainText5").innerHTML = userInputAll;
+        document.getElementById("mainText6").innerHTML = userInputAll;
+        document.getElementById("mainText7").innerHTML = userInputAll;
+        document.getElementById("mainText8").innerHTML = userInputAll;
+        userInputAll = "";
+            }
+    function lineDown(){
+        line ++;
+
+        console.log("line = " + line)
+
+        userInputAll = ""
+
+            switch (line){
+            case 1:
+        updateMainText("maintext2");
+            break
+            
+            case 2:
+        updateMainText("maintext3");
+            break
+
+            case 3:
+        updateMainText("maintext4");
+            break
+
+            case 4:
+        updateMainText("maintext5");
+            break
+
+            case 5:
+        updateMainText("maintext6");
+            break
+
+            case 6:
+        updateMainText("maintext7");
+            break
+
+            case 7:
+        updateMainText("maintext8");
+            break
+
+            case 8:
+        updateMainText("maintext1");
+        line = 1;
+        document.getElementById("8lineCap").innerHTML = "The maximum is 8 lines";
+            break
+
+             }   }
+        // userInputAll = userInputAll + "<br>";
+        // updateMainText();
+
+    // function removeLine(){
+    //     userInputAll = userInputAll.replace("<br>", " ");
+    //     updateMainText();
+    // }
+</script>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notes App</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <h2>Notes App</h2><br>
+        <br>
+    </head>
+    <body>
+        <label id="mainText1">--Your text will appear here--</label><br>
+        <label id="mainText2">--</label><br>
+        <label id="mainText3">--</label><br>
+        <label id="mainText4">--</label><br>
+        <label id="mainText5">--</label><br>
+        <label id="mainText6">--</label><br>
+        <label id="mainText7">--</label><br>
+        <label id="mainText8">--</label><br>
+    </body>
+    <footer>
+        <form onsubmit="return false">
+            <input type="text" id="userInput" placeholder="type here..."></input><br>
+            <button onclick="getInput()" id="addButton">Add Text</button>
+            <button onclick="removeInput()" id="removeButton">Remove Text</button><br>
+            <button onclick="clearLine()" id="clearLineButton">Clear Line</button>
+            <button onclick="clearAllInput()" id="clearButton">Clear All</button><br>
+            <button onclick="lineDown()" id="lineDownButton">Line Down</button>
+            <label id="8lineCap"></label>
+        </form>
+    </footer>
+</html>
